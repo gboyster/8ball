@@ -3,7 +3,8 @@
 	<head>
 		<title>Play the Magic Eight Ball</title>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src=""http://unslider.com/unslider.min.js"></script>
 		<SCRIPT LANGUAGE="JavaScript">
 
 		var answers = new Array(
@@ -23,20 +24,17 @@
 			return answers[num];
 		}
 	</script>
-
+	
 
 
 	</head>
 	<body>
 		<div id="top">
-			<h3>Ask The Eight Ball</h3>
 		</div>
 		<div id="bottom">
 			<div>
 			<form class="form">
-			<b>Your question:</b>
-				<input type=text name=question size=35>
-				<input type=button name=ask value="ask" onClick="if (this.form.question.value!='') this.form.answer.value = fortune();">
+				<input type=button name=ask value="ask" onClick="this.form.answer.value = fortune();">
 			</br>	
 				<b>Answer: </b>
 				<input type=text name=answer size=35>
