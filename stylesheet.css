@@ -1,0 +1,35 @@
+#top {
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 70%;
+	}
+
+
+#bottom {
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 30%;
+	}
+	
+#top {
+	top: 0;
+	background-color: Black;
+	}
+	
+#bottom {
+	bottom: 0;
+	background-color: BlanchedAlmond;
+	}
+
+.form {
+	width: 400px;
+	height: 100px;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #308014;
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+}

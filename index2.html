@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Play the Magic Eight Ball</title>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		
+		<SCRIPT LANGUAGE="JavaScript">
+
+		var answers = new Array(
+			"Yes.",
+			"No.", 
+			"My sources are pointing toward yes.", 
+			"It's possible.",
+			"Very unlikely.", 
+			"Can you repeat the question?",
+			"Absolutely not.", 
+			"Sure.",
+			"Ask again later."
+			);
+
+		function fortune() {
+			num = Math.round( (answers.length - 1) * Math.random());
+			return answers[num];
+		}
+	</script>
+
+
+
+	</head>
+	<body>
+		<div id="top">
+			<h3>Ask The Eight Ball</h3>
+		</div>
+		<div id="bottom">
+			<div>
+			<form class="form">
+			<b>Your question:</b>
+				<input type=text name=question size=35>
+				<input type=button name=ask value="ask" onClick="if (this.form.question.value!='') this.form.answer.value = fortune();">
+			</br>	
+				<b>Answer: </b>
+				<input type=text name=answer size=35>
+				</br>
+		</form>
+		</div>
+		</div>
+	</body>
+</html>
