@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title>Play the Magic Eight Ball</title>
+		<link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src=""http://unslider.com/unslider.min.js"></script>
+
 		<SCRIPT LANGUAGE="JavaScript">
 
 		var answers = new Array(
@@ -30,15 +30,15 @@
 	</head>
 	<body>
 		<div id="top">
+		<h2>Your fortune Revealed</h2>
 		</div>
 		<div id="bottom">
 			<div>
 			<form class="form">
-				<input type=button name=ask value="ask" onClick="this.form.answer.value = fortune();">
-			</br>	
-				<b>Answer: </b>
+				<b>Your Fortune:</b>
 				<input type=text name=answer size=35>
 				</br>
+				<input type=button name=ask value="ask" onClick="this.form.answer.value = fortune();">
 		</form>
 		</div>
 		</div>
